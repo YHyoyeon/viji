@@ -15,7 +15,7 @@ import (
 var (
 	cfgFile string  // 설정 파일 경로를 저장하는 변수
 	lang    string  // 출력 언어 설정 (ko/en)을 저장하는 변수
-	learn   string  // 학습 모드 레벨 (beginner/intermediate)을 저장하는 변수
+	learnLevel string  // 학습 모드 레벨 (beginner/intermediate)을 저장하는 변수
 )
 
 // rootCmd는 하위 명령어 없이 호출될 때의 기본 명령어를 나타냅니다
@@ -55,7 +55,7 @@ func init() {
 	// 전역 플래그 설정 - 모든 하위 명령어에서 사용 가능한 플래그들
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "설정 파일 (기본값: $HOME/.vi-assistant.yaml)")
 	rootCmd.PersistentFlags().StringVar(&lang, "lang", "ko", "출력 언어 (ko/en)")
-	rootCmd.PersistentFlags().StringVar(&learn, "learn", "", "학습 모드 시작 (beginner/intermediate)")
+	rootCmd.PersistentFlags().StringVar(&learnLevel, "learn", "", "학습 모드 시작 (beginner/intermediate)")
 
 	// 로컬 플래그 설정 - 루트 명령어에서만 사용 가능한 플래그
 	rootCmd.Flags().BoolP("toggle", "t", false, "도움말 토글")
@@ -72,8 +72,8 @@ func init() {
 
 	// 학습 모드 플래그 처리 - 명령어 실행 전에 학습 모드가 설정되었는지 확인
 	rootCmd.PersistentPreRun = func(cmd *cobra.Command, args []string) {
-		if learn != "" {
-			handleLearnMode(learn)  // 학습 모드가 설정되면 해당 함수 호출
+		if learnLevel != "" {
+			handleLearnMode(learnLevel)  // 학습 모드가 설정되면 해당 함수 호출
 		}
 	}
 }

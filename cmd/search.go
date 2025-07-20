@@ -3,7 +3,6 @@ package cmd
 
 import (
 	"fmt"  // 표준 출력/입력 포맷팅을 위한 패키지
-	"strings"  // 문자열 조작을 위한 패키지
 
 	"github.com/spf13/cobra"  // CLI 명령어 프레임워크
 	"github.com/spf13/viper"  // 설정 관리 라이브러리
