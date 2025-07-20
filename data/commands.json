@@ -1,0 +1,289 @@
+[
+  {
+    "keyword": "copy",
+    "command": "yy",
+    "description": "현재 줄을 복사(야크)합니다",
+    "example": "커서가 있는 줄에서 'yy'를 입력하면 해당 줄이 복사됩니다",
+    "category": "copy"
+  },
+  {
+    "keyword": "copy",
+    "command": "Y",
+    "description": "현재 줄을 복사합니다 (yy와 동일)",
+    "example": "커서가 있는 줄에서 'Y'를 입력하면 해당 줄이 복사됩니다",
+    "category": "copy"
+  },
+  {
+    "keyword": "paste",
+    "command": "p",
+    "description": "복사된 내용을 커서 다음 위치에 붙여넣습니다",
+    "example": "yy로 복사한 후 'p'를 입력하면 다음 줄에 붙여넣어집니다",
+    "category": "paste"
+  },
+  {
+    "keyword": "paste",
+    "command": "P",
+    "description": "복사된 내용을 커서 이전 위치에 붙여넣습니다",
+    "example": "yy로 복사한 후 'P'를 입력하면 이전 줄에 붙여넣어집니다",
+    "category": "paste"
+  },
+  {
+    "keyword": "save",
+    "command": ":w",
+    "description": "현재 파일을 저장합니다",
+    "example": ":w filename으로 다른 이름으로 저장할 수 있습니다",
+    "category": "file"
+  },
+  {
+    "keyword": "save",
+    "command": ":wq",
+    "description": "파일을 저장하고 vi를 종료합니다",
+    "example": "편집을 완료하고 저장 후 나갈 때 사용합니다",
+    "category": "file"
+  },
+  {
+    "keyword": "save",
+    "command": ":x",
+    "description": "변경사항이 있으면 저장하고 종료합니다",
+    "example": ":wq와 비슷하지만 변경사항이 없으면 저장하지 않습니다",
+    "category": "file"
+  },
+  {
+    "keyword": "quit",
+    "command": ":q",
+    "description": "변경사항 없이 vi를 종료합니다",
+    "example": "변경사항이 있으면 경고가 표시됩니다",
+    "category": "file"
+  },
+  {
+    "keyword": "quit",
+    "command": ":q!",
+    "description": "변경사항을 무시하고 강제로 종료합니다",
+    "example": "변경사항을 저장하지 않고 나갈 때 사용합니다",
+    "category": "file"
+  },
+  {
+    "keyword": "delete",
+    "command": "dd",
+    "description": "현재 줄을 삭제합니다",
+    "example": "커서가 있는 줄에서 'dd'를 입력하면 해당 줄이 삭제됩니다",
+    "category": "delete"
+  },
+  {
+    "keyword": "delete",
+    "command": "x",
+    "description": "커서 위치의 문자를 삭제합니다",
+    "example": "커서가 있는 문자를 삭제합니다",
+    "category": "delete"
+  },
+  {
+    "keyword": "delete",
+    "command": "X",
+    "description": "커서 이전 문자를 삭제합니다",
+    "example": "백스페이스와 같은 역할을 합니다",
+    "category": "delete"
+  },
+  {
+    "keyword": "undo",
+    "command": "u",
+    "description": "마지막 작업을 취소합니다",
+    "example": "실수로 삭제한 내용을 되돌릴 때 사용합니다",
+    "category": "edit"
+  },
+  {
+    "keyword": "redo",
+    "command": "Ctrl+r",
+    "description": "취소한 작업을 다시 실행합니다",
+    "example": "u로 취소한 작업을 되돌릴 때 사용합니다",
+    "category": "edit"
+  },
+  {
+    "keyword": "insert",
+    "command": "i",
+    "description": "커서 위치에서 삽입 모드로 전환합니다",
+    "example": "텍스트를 입력하기 위해 삽입 모드로 들어갑니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "insert",
+    "command": "a",
+    "description": "커서 다음 위치에서 삽입 모드로 전환합니다",
+    "example": "커서 다음부터 텍스트를 입력합니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "insert",
+    "command": "A",
+    "description": "현재 줄 끝에서 삽입 모드로 전환합니다",
+    "example": "줄 끝에 텍스트를 추가할 때 사용합니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "insert",
+    "command": "o",
+    "description": "현재 줄 아래에 새 줄을 만들고 삽입 모드로 전환합니다",
+    "example": "새 줄을 추가할 때 사용합니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "insert",
+    "command": "O",
+    "description": "현재 줄 위에 새 줄을 만들고 삽입 모드로 전환합니다",
+    "example": "현재 줄 위에 새 줄을 추가할 때 사용합니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "normal",
+    "command": "Esc",
+    "description": "명령 모드로 돌아갑니다",
+    "example": "삽입 모드에서 명령 모드로 전환할 때 사용합니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "move",
+    "command": "h",
+    "description": "커서를 왼쪽으로 이동합니다",
+    "example": "한 문자씩 왼쪽으로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "j",
+    "description": "커서를 아래로 이동합니다",
+    "example": "한 줄씩 아래로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "k",
+    "description": "커서를 위로 이동합니다",
+    "example": "한 줄씩 위로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "l",
+    "description": "커서를 오른쪽으로 이동합니다",
+    "example": "한 문자씩 오른쪽으로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "w",
+    "description": "다음 단어의 시작으로 이동합니다",
+    "example": "단어 단위로 앞으로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "b",
+    "description": "이전 단어의 시작으로 이동합니다",
+    "example": "단어 단위로 뒤로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "0",
+    "description": "현재 줄의 시작으로 이동합니다",
+    "example": "줄의 맨 앞으로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "$",
+    "description": "현재 줄의 끝으로 이동합니다",
+    "example": "줄의 맨 뒤로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "gg",
+    "description": "파일의 첫 번째 줄로 이동합니다",
+    "example": "파일의 맨 위로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "move",
+    "command": "G",
+    "description": "파일의 마지막 줄로 이동합니다",
+    "example": "파일의 맨 아래로 이동합니다",
+    "category": "navigation"
+  },
+  {
+    "keyword": "search",
+    "command": "/pattern",
+    "description": "앞으로 패턴을 검색합니다",
+    "example": "/hello를 입력하면 'hello'를 앞으로 검색합니다",
+    "category": "search"
+  },
+  {
+    "keyword": "search",
+    "command": "?pattern",
+    "description": "뒤로 패턴을 검색합니다",
+    "example": "?hello를 입력하면 'hello'를 뒤로 검색합니다",
+    "category": "search"
+  },
+  {
+    "keyword": "search",
+    "command": "n",
+    "description": "다음 검색 결과로 이동합니다",
+    "example": "검색 후 다음 결과를 찾을 때 사용합니다",
+    "category": "search"
+  },
+  {
+    "keyword": "search",
+    "command": "N",
+    "description": "이전 검색 결과로 이동합니다",
+    "example": "검색 후 이전 결과를 찾을 때 사용합니다",
+    "category": "search"
+  },
+  {
+    "keyword": "replace",
+    "command": ":s/old/new",
+    "description": "현재 줄의 첫 번째 'old'를 'new'로 바꿉니다",
+    "example": ":s/cat/dog를 입력하면 현재 줄의 첫 번째 'cat'이 'dog'로 바뀝니다",
+    "category": "edit"
+  },
+  {
+    "keyword": "replace",
+    "command": ":s/old/new/g",
+    "description": "현재 줄의 모든 'old'를 'new'로 바꿉니다",
+    "example": ":s/cat/dog/g를 입력하면 현재 줄의 모든 'cat'이 'dog'로 바뀝니다",
+    "category": "edit"
+  },
+  {
+    "keyword": "replace",
+    "command": ":%s/old/new/g",
+    "description": "파일 전체의 모든 'old'를 'new'로 바꿉니다",
+    "example": ":%s/cat/dog/g를 입력하면 파일 전체의 모든 'cat'이 'dog'로 바뀝니다",
+    "category": "edit"
+  },
+  {
+    "keyword": "visual",
+    "command": "v",
+    "description": "비주얼 모드로 전환합니다",
+    "example": "텍스트를 선택하기 위해 비주얼 모드로 들어갑니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "visual",
+    "command": "V",
+    "description": "줄 단위 비주얼 모드로 전환합니다",
+    "example": "줄 단위로 텍스트를 선택합니다",
+    "category": "mode"
+  },
+  {
+    "keyword": "help",
+    "command": ":help",
+    "description": "vi 도움말을 표시합니다",
+    "example": "vi의 모든 명령어에 대한 도움말을 볼 수 있습니다",
+    "category": "help"
+  },
+  {
+    "keyword": "help",
+    "command": ":help command",
+    "description": "특정 명령어에 대한 도움말을 표시합니다",
+    "example": ":help :w를 입력하면 저장 명령어에 대한 도움말이 표시됩니다",
+    "category": "help"
+  }
+] 
